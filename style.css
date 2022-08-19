@@ -4,8 +4,10 @@
   /*color*/
   --primary: #14a800;
   --primary-dark: #3c8224;
+  --primary-light: #e9f7e5;
   --grey: #5e6d55;
   --grey-light: #d5e0d5;
+  --grey-light-2: #9aaa97;
   --white: #fff;
   --width: 1140px;
   --input-height: 40px;
@@ -38,17 +40,17 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--grey);
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   cursor: pointer;
 }
 
 .btn_secondary {
   background-color: var(--primary);
-  border: none;
+  border: 1px solid var(--primary);
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--white);
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -57,18 +59,54 @@ body {
 .btn_secondary:hover {
   background-color: var(--primary-dark);
 }
+
+.btn_secondary_outline {
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+  /* border: none; */
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 1rem 2.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn_secondary_outline:hover {
+  background-color: var(--primary-light);
+}
+
+.title-1 {
+  font-size: 80px;
+}
+
+.title-3 {
+  font-size: 24px;
+}
+
+.title-4 {
+  font-size: 16px;
+}
 /*Common css end*/
 
 /*Header css start*/
 
 .header {
+  font-size: 1.4rem;
+  position: fixed;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: var(--white);
+
+  z-index: 101;
+}
+
+.header_wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.4rem;
   height: 70px;
-
-  padding: 0 1rem;
   border-bottom: 1px solid var(--grey-light);
 }
 
@@ -148,18 +186,99 @@ body {
 /*Header css end*/
 
 /*Section 1 css start*/
-
 .section_1 {
   font-size: 1.4rem;
+  position: relative;
+  padding-top: 140px;
 }
 
-.section_1_list {
+.section_1_top {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  background-color: var(--white);
+  z-index: 100;
+}
+
+.section_1_top_list {
+  display: flex;
+  align-items: center;
+  height: 70px;
+
+  color: var(--grey);
+}
+
+.section_1_top_list_item {
+  margin: 0 2rem;
+  font-weight: 500;
+}
+
+.section_1_top_list_item:last-child {
   display: flex;
   align-items: center;
 }
 
-.section_1_list_item {
-  margin: 0 2rem;
-  font-weight: 500;
+.section_1_top_list_item:last-child img {
+  width: 14px;
 }
+
+.section_1_bottom {
+  /* margin-top: 140px; */
+  position: relative;
+}
+
+.section_1_bottom_left h1 {
+  color: var(--primary);
+}
+
+.section_1_bottom_left h3 {
+  color: var(--grey);
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.section_1_bottom_left_btns button {
+  margin-right: 2rem;
+}
+
+.section_1_bottom_left_companies_logo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.section_1_bottom_left_companies_logo h4 {
+  color: var(--grey-light-2);
+  font-weight: 600;
+}
+
+.section_1_bottom_left_companies_logo div {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.section_1_bottom_left_companies_logo div img {
+  height: 40px;
+  max-height: 110px;
+  margin-right: 30px;
+  width: auto;
+}
+
+.section_1_bottom_left_companies_logo div img:nth-child(3) {
+  height: 26px;
+}
+
+.section_1_bottom_right {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  z-index: 99;
+}
+
+.section_1_bottom_right img {
+  width: 480px;
+}
+
 /*Section 1 css end*/
