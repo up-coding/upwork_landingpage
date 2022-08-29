@@ -6,6 +6,7 @@
   --primary-dark: #3c8224;
   --primary-dark-2: #5e6d55;
   --primary-dark-3: #e4ebe4;
+  --primary-dark-4: #13544e;
   --primary-light: #e9f7e5;
   --primary-light-2: #f2f7f2;
   --grey: #5e6d55;
@@ -608,7 +609,6 @@ body {
 .section_5 {
   display: flex;
   margin-top: 50px;
-  margin-bottom: 500px;
   border-radius: 8px;
   color: var(--white);
 
@@ -693,3 +693,55 @@ body {
 }
 
 /*Section 5 css end*/
+
+/*Section 6 css start*/
+.section_6 {
+  margin-top: 85px;
+}
+
+.section_6 h1 {
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.section_6_reviews_carousel {
+  width: 100%;
+}
+
+.section_6_reviews_list {
+  display: flex;
+  align-items: center;
+}
+
+.section_6_reviews_list_item {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  min-height: 450px;
+  padding: 25px;
+  color: var(--grey-light);
+}
+
+.section_6_reviews_list_item_top img {
+  width: 199px;
+  height: 56px;
+  margin-bottom: 15px;
+  margin-right: auto;
+}
+
+.section_6_reviews_list_item_top h4 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.section_6_reviews_list_item_top p {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.section_6_reviews_list_item.item_1 {
+  background-color: var(--primary-dark-4);
+}
+
+/*Section 6 css end*/
