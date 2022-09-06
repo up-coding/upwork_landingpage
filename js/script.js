@@ -1,9 +1,9 @@
-const carousal = document.querySelector(".section_6_reviews_carousel");
-const leftBtn = document.querySelector(".section_6_reviews_list_controls_left");
+const carousal = document.querySelector(".section_7_reviews_carousel");
+const leftBtn = document.querySelector(".section_7_reviews_list_controls_left");
 const rightBtn = document.querySelector(
-  ".section_6_reviews_list_controls_right"
+  ".section_7_reviews_list_controls_right"
 );
-const list = document.querySelector(".section_6_reviews_list");
+const list = document.querySelector(".section_7_reviews_list");
 
 const onClickRight = () => {
   carousal.scrollTo(list.scrollWidth, 0);
